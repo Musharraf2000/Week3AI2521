@@ -34,8 +34,16 @@ using Week3AI2521;
 //    Console.WriteLine($"Net Profit: {b.calculateNetProfit()}");
 //}
 
-Rectangle r1 = new Rectangle("Rectangle 1",2,3);
-Circle c1 = new Circle("Circle 1", 7);
+//Rectangle r1 = new Rectangle("Rectangle 1",2,3);
+//Circle c1 = new Circle("Circle 1", 7);
 
-Console.WriteLine($"{r1.Name} {r1.CalculateArea()}");
-Console.WriteLine($"{c1.Name} {c1.CalculateArea()}");
+//Console.WriteLine($"{r1.Name} {r1.CalculateArea()}");
+//Console.WriteLine($"{c1.Name} {c1.CalculateArea()}");
+
+List<Media> medias = new List<Media>([new Movie("Titanic"), new Song("Dracula")]);
+
+foreach(Media media in medias)
+{
+    media.play();
+    media.Download();
+}
